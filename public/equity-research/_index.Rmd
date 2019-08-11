@@ -1,8 +1,21 @@
 ---
-title: testing new blog post 2
+title: Equity Research in R
 author: Zac Garland
-date: '2019-08-10'
-slug: testing-if-shows-up
+date: '2019-08-11'
+slug: equity-research-in-r
+categories:
+  - R
+  - equity-research
+tags:
+  - R
+  - Rstudio
+  - Tidyverse
+  - equityresearchr
+description: ''
+featured: tidyverse-default.png
+featuredalt: ''
+featuredpath: post
+linktitle: ''
 type: post
 ---
 
@@ -16,7 +29,7 @@ plotly_center <- function(plot){
 
 }
 ```
-
+this is a change
 
 ```{r, warning=FALSE,message=FALSE}
 library(tidyverse)

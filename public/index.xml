@@ -6,9 +6,19 @@
     <description>Recent content on Zac Garland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Sun, 11 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Coding in R (a love story)</title>
+      <link>/blog/coding-in-r-a-love-story/</link>
+      <pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/coding-in-r-a-love-story/</guid>
+      <description>This is a new test for R MarkdownThis tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I’ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won’t cover using CSS to style your theme.</description>
+    </item>
     
   </channel>
 </rss>

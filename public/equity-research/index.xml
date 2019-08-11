@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Equity Research in R on Zac Garland</title>
+    <link>/equity-research/</link>
+    <description>Recent content in Equity Research in R on Zac Garland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/equity-research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

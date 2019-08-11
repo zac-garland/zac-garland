@@ -12,7 +12,7 @@ tags:
   - Tidyverse
   - equityresearchr
 description: ''
-featured: tidyverse-default.png
+featured: cluster_cor.png
 featuredalt: ''
 featuredpath: post
 linktitle: ''

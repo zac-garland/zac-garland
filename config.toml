@@ -1,4 +1,4 @@
-baseurl                 = "https://www.zacgarland.com"
+baseurl                 = "mystifying-williams-e44bd5.netlify.com"
 DefaultContentLanguage  = "en"
 title                   = "Zac Garland"
 theme = "hugo-future-imperfect-slim"

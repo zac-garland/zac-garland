@@ -1,4 +1,4 @@
-this is a repo to host the source files of my [personal website](https://www.zacgarland.com)
+this is a repo to host the source files of my [personal website](http://www.zacgarland.com)
 
 which contains blog posts regarding data science, investing, and coding in R. 
 

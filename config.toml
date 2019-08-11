@@ -1,4 +1,4 @@
-baseurl                 = "zacgarland.com"
+baseurl                 = "https://www.zacgarland.com"
 DefaultContentLanguage  = "en"
 title                   = "Zac Garland"
 theme = "hugo-future-imperfect-slim"

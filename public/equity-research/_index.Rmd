@@ -12,7 +12,7 @@ tags:
   - Tidyverse
   - equityresearchr
 description: ''
-featured: tidyverse-default.png
+featured: cluster_cor.png
 featuredalt: ''
 featuredpath: post
 linktitle: ''
@@ -29,7 +29,7 @@ plotly_center <- function(plot){
 
 }
 ```
-this is a change
+this is a change test
 
 ```{r, warning=FALSE,message=FALSE}
 library(tidyverse)

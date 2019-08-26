@@ -1,5 +1,5 @@
 ---
-title: Coding in R (a love story)
+title: why I code in R
 author: Zac Garland
 date: '2019-08-11'
 slug: coding-in-r-a-love-story

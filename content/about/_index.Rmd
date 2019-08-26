@@ -1,0 +1,86 @@
+---
+date: "2014-04-09"
+title: About Me
+---
+
+<div>
+
+<h4>
+
+
+<span class="fa fa-briefcase about-icon"></span> currently an <font color='#FF652F'><b>Associate Engineer at Mastercard</b></font><br>
+
+<span class="fas fa-chart-line about-icon"></span> on the <font color='#14a76c'><b>economic and market insights team </b></font><br>
+
+<span class="fa fa-briefcase about-icon"></span> Focused on <font color='#FFCF75'><b>data science & web development</b></font>
+</h4>
+
+<style>
+.column-left-half{
+  float: left;
+  width: 50%;
+  height: 100%;
+  border: 1px solid white;
+  padding: 20px;
+}
+
+.column-left-half .h1, h1{
+  text-align: center;
+}
+
+.column-right-half .h1, h1{
+  text-align: center;
+}
+
+.column-right-half{
+  float: right;
+  width: 50%;
+  height: 100%;
+  border: 1px solid white;
+}
+</style>
+
+#### This section will have three columns
+<div class = "row" style ="height: 500px;">
+<div class="column-left-half">
+<h1><span class="fa fa-briefcase about-icon"></span></h1>
+
+<h5>
+currently an <font color='#FF652F'><b>Associate Engineer at Mastercard</b></font><br>
+
+on the <font color='#14a76c'><b>economic and market insights team </b></font><br>
+
+focused on <font color='#FFCF75'><b>data science & web development</b></font>
+</h5>
+
+
+
+
+<!-- associate engineer at mastercard (economics group) -->
+
+
+<!-- currently an associate engineer at mastercard.  -->
+<!-- mainly focused on data science and web development.  -->
+<!-- some of my recent projects include: -->
+<!-- - early warning (recession) model -->
+<!-- - html presentation presented to the c-suite -->
+
+<!-- previously a consultant at factset research systems where I worked  -->
+<!-- with quantitative asset management firms.  -->
+
+</div>
+
+<div class="column-right-half">
+<h1><span class="fas fa-chart-line about-icon"></span></h1>
+
+
+**7** seven  
+**8** eight  
+**9** nine  
+</div>
+</div>
+
+
+
+<!-- end -->
+</div>

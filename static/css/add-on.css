@@ -6,7 +6,7 @@
 */
 body {
   
-  background-color: #272727;
+  background-color: #111111;
   
 }
 
@@ -29,7 +29,7 @@ input, select, textarea {
 
 
 .post {
-    background: #323232;
+    background: #181818;
     margin: 1.5em auto;
     padding: 1em;
     max-width: 55em;
@@ -37,7 +37,7 @@ input, select, textarea {
 }
 
 .mini-post {
-  background: #323232 !important;
+  background: #181818 !important;
   color: #fff !important;
   
   

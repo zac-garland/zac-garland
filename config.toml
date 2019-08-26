@@ -63,14 +63,14 @@ disableLanguages        = [""]
     # This appears at the top of the sidebar above params.intro.header.
     # A width of less than 100px is recommended from a design perspective.
     [params.intro.pic]
-      src                 = "/img/main/my_face.jpg"
+      src                 = "/img/main/my_face.png"
       # Masks image in a certain shape. Supported are circle, triangle, diamond, and hexagon.
       shape               = "circle"
-      width               = ""
+      width               = "200px"
       alt                 = ""
 
   [params.sidebar]
-    about               = "test"
+    about               = false
     # Sets the number of recent posts to show in the sidebar. The default value is 5.
     postAmount          = 3
     # set to show or to hide categories in the sidebar
@@ -167,7 +167,7 @@ medium                = ""
 # Professional/Business Oriented Communities
 linkedin              = "zacgarland"
 youtube               = ""
-instagram             = "mrclean5280"
+instagram             = "zac_garland_"
 twitter               = "ZacGarland1"
 # Email
 email                 = "zachary.garland@outlook.com"

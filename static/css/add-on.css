@@ -32,6 +32,35 @@ body {
   padding: 20px;
 }
 
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #111111;
+    color: #fff;
+    padding: .5em;
+}
+
+.hljs-keyword, .hljs-selector-tag {
+  color: #fff;
+}
+
+.hljs-attribute {
+  color: #FF652F;
+}
+
+.hljs-string {
+    color: #14a76c;
+}
+
+
+.hljs-comment, .hljs-quote {
+    color: #b3d4fc;
+    font-style: italic;
+}
+
+.hljs-number, .hljs-built_in, .hljs-builtin-name, .hljs-literal, .hljs-type, .hljs-params, .hljs-meta, .hljs-link {
+  color: #fff;
+}
 
 input, select, textarea {
     color: #fff;
@@ -106,3 +135,63 @@ a {
 
 }
 
+
+
+/* Code folding */
+
+/* Each code block button */
+.code-folding-btn { 
+    margin-bottom: 4px; 
+}
+.row { 
+    display: flex;
+}
+.collapse {
+    display: none;
+}
+
+.collapsing {
+  transition: none !important;
+  padding: 0;
+  opacity: 0;
+}
+.in { 
+    display: block ;
+    padding: 0;
+}
+.col-md-12 {
+    margin: 0 0 0 auto;
+}
+
+/* Main show/hide button */
+#code-folding-buttons {float: right;}
+#code-folding-buttons .pull-right > .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+#code-folding-buttons .btn.btn-default.btn-xs.dropdown-toggle {
+    float: right;
+}
+#code-folding-buttons.open > .dropdown-menu {
+    display: block;
+}
+#code-folding-buttons .dropdown-menu {
+    /* position: absolute;*/
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    /*float: left;*/
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #000;
+  
+}
+#code-folding-buttons .dropdown-menu li {
+    padding: 5px;
+}
+/* End code folding */

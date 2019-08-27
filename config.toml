@@ -16,6 +16,14 @@ disableLanguages        = [""]
   # Example: ["default", "/path/to/file"]
   cssFiles              = ["default"]
   jsFiles               = ["default"]
+  
+  # Set to true to disable code folding
+    disable_codefolding = false
+  # Set to "hide" or "show" all codes by default
+    codefolding_show = "hide"
+  # Set to true to exclude the "Show/hide all" button
+    codefolding_nobutton = true
+  
   # Sets options for highlight.js
   highlightjs           = true
   highlightjsTheme      = "an-old-hope"
@@ -70,7 +78,7 @@ disableLanguages        = [""]
       alt                 = ""
 
   [params.sidebar]
-    about               = false
+    about               = ""
     # Sets the number of recent posts to show in the sidebar. The default value is 5.
     postAmount          = 3
     # set to show or to hide categories in the sidebar

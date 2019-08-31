@@ -38,7 +38,7 @@ disableLanguages        = [""]
 
   [params.meta]
     # Sets the meta tag description
-    description         = "passionate about data science, investing, and R"
+    description         = "data science, investing, and R"
     # Sets the meta tag author
     author              = "Zac Garland"
     # If you would like to add more comprehensive favicon support passed root

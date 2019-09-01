@@ -64,7 +64,7 @@ disableLanguages        = [""]
   # required for proper functionality. HTML is supported within the params.
   [params.intro]
     header                = ""
-    paragraph             = "self taught developer<br> investor & data aficionado"
+    paragraph             = "self taught developer<br> investor & data scientist"
     rssIntro              = false
     socialIntro           = true
 
@@ -176,6 +176,6 @@ medium                = ""
 linkedin              = "zacgarland"
 youtube               = ""
 instagram             = "zac_garland_"
-twitter               = "ZacGarland1"
+twitter               = "zac_garland_"
 # Email
 email                 = "zachary.garland@outlook.com"

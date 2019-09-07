@@ -20,9 +20,10 @@ change post to 80 transparency
 
 body {
   
-background-image: url(https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+
+
 
   /* Full height */
   height: 100%; 

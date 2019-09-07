@@ -78,7 +78,7 @@ disableLanguages        = [""]
       alt                 = ""
 
   [params.sidebar]
-    about               = "passionate about data science, investing, and R"
+    about               = " "
     # Sets the number of recent posts to show in the sidebar. The default value is 5.
     postAmount          = 3
     # set to show or to hide categories in the sidebar

@@ -3,6 +3,7 @@
   {{ partial "head" . }}
   <body>
     {{ partial "site-header" . }}
+    <div>
       <main id="site-main">
         {{ partial "site-intro" . }}
         <article class="post about-me">
@@ -22,5 +23,7 @@
           </div>
         </article>
       </main>
+      {{ partial "scripts" . }}
+    </div>
   </body>
 </html>

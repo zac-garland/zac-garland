@@ -19,7 +19,7 @@ linktitle: ''
 type: post
 ---
 
-this is a placeholder for my post on equity research in R
+this is a placeholder for my post on equity research in R test
 ```{r}
 plotly_center <- function(plot){
 

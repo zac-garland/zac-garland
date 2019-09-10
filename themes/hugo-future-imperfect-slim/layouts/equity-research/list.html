@@ -2,26 +2,28 @@
 <html lang="{{ .Page.Language | default "en" }}">
   {{ partial "head" . }}
   <body>
-    {{ partial "site-header" . }}
+    {{ partial "content-header" . }}
     <div id="wrapper">
       {{ partial "site-intro" . }}
       <main id="site-main">
-        <article class="post">
-          <header>
-            <div class="title">
-              {{ if $.Scratch.Get "h1" }}
-                <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-                {{ $.Scratch.Set "h1" false }}
-              {{ else }}
-                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-              {{ end }}
-              {{ with .Description }}<p>{{ . }}</p>{{ end }}
-            </div>
-          </header>
-          <div id="content">
-            {{ .Content }}
-          </div>
-        </article>
+      <article class="post">
+        {{ .Render "header" }}
+        <section id="socnet-share">
+          {{ partial "share-buttons" . }}
+        </section>
+        {{ .Render "featured" }}
+          {{ partial "header_maincodefolding" . }}
+        <div class="content">
+          {{ .Content }}
+        </div>
+        <footer>
+          {{ .Render "stats" }}
+        </footer>
+      </article>
+      <article class="post">
+        {{ .Render "comments" }}
+      </article>
+      {{ .Render "pagination" }}
       </main>
       {{ partial "site-sidebar" . }}
       {{ partial "site-footer" . }}

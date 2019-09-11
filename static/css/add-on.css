@@ -82,7 +82,7 @@ background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(
 .hljs {
   display: block;
   overflow-x: auto;
-  background: #111111;
+  background: transparent;
     color: #fff;
     padding: .5em;
 }

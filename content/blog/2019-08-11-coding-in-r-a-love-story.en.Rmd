@@ -1,5 +1,5 @@
 ---
-title: why I choose to code in R
+title: teach yourself to code
 author: Zac Garland
 date: '2019-08-11'
 slug: coding-in-r-a-love-story
@@ -9,8 +9,8 @@ tags:
   - R
   - Rstudio
   - Tidyverse
-description: ''
-featured: tidyverse-default.png
+description: "it's the best investment you'll ever make"
+featured: code_2.jpg
 featuredalt: ''
 featuredpath: post
 linktitle: ''
@@ -18,8 +18,8 @@ type: post
 ---
 
 
-### This is a new test for R Markdown
-This is a placeholder for a post on why i choose to code in R
+
+placeholder for a post on teaching yourself to code
 
 ```{r}
 plotly_center <- function(plot){
@@ -29,7 +29,7 @@ plotly_center <- function(plot){
 }
 
 ```
-this is a change
+
 
 ```{r, warning=FALSE,message=FALSE}
 library(tidyverse)

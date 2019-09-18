@@ -2,6 +2,7 @@
   {{ with .Site.Params.intro.pic }}<a style="border-bottom:solid 1px transparent;" href="{{ "/" | relLangURL}}"><img src="{{ .src | relURL }}" class="{{ .shape }}" width="{{ .width }}" alt="{{ .alt }}" /></a>{{ end }}
   <header>
     {{ with .Site.Params.intro.header }}<h1>{{ . | safeHTML }}</h1>{{ end }}
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Pacifico:300,400,600,700&amp;lang=en" />
   </header>
   <main>
   <p class="shadow zac">Zac</p>

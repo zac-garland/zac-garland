@@ -3,6 +3,7 @@ date: "2014-04-09"
 title: a mountain man who fell in love with coding, investing, & data science
 ---
 
+
 <div>
 
 <div style="text-transform: lowercase;">

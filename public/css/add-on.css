@@ -67,7 +67,7 @@ body {
 
 body {
   
-background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+background-image: url(https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 
 
 
@@ -182,7 +182,7 @@ input, select, textarea {
 
 
 .post {
-    background: #18181880;
+    background: #000000CC;
     margin: 1.5em auto;
     padding: 1em;
     max-width: 55em;

@@ -27,28 +27,3 @@ type: post
 <iframe src="https://player.vimeo.com/video/360549999?quality=1080p&autoplay=1&rel=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen
 style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 </div>
-
-
-```{r}
-plotly_center <- function(plot){
-
-  shiny::div(plot,align = "center")
-
-}
-
-```
-
-
-```{r, warning=FALSE,message=FALSE}
-library(tidyverse)
-library(tidyquant)
-library(plotly)
-
-
-tq_get("AAPL") %>% 
-  plot_ly(x = ~date,
-          y = ~adjusted,
-          mode = "lines") %>% 
-  plotly_center()
-
-```

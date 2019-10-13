@@ -10,6 +10,7 @@
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/{{ .Site.Params.highlightjsTheme | default "default" }}.min.css">{{ end }}
   {{ range .Site.Params.cssFiles }}
     {{ if eq . "default" }}
+    <link rel="stylesheet" href="{{ "css/bootstrap-grid.css" | relURL }}">
       <link rel="stylesheet" href="{{ "css/normalize.css" | relURL}}">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
@@ -25,5 +26,11 @@
   {{ if .Site.Params.staticman.recaptcha.recaptcha }}<script src="https://www.google.com/recaptcha/api.js?render={{ .Site.Params.staticman.recaptcha.sitekey }}"></script>{{ end }}
   {{ .Scratch.Set "Permalink" .Permalink }}
   {{ .Scratch.Set "Title" .Title }}
-  {{ .Scratch.Set "Author" .Author }}
+  {{ if .Params.Author}}
+    {{ .Scratch.Set "Author" .Params.Author }}
+  {{ else }}
+    {{ .Scratch.Set "Author" .Author }}
+  {{ end }}
+  
+  
 </head>

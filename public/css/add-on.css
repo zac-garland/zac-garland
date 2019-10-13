@@ -184,12 +184,14 @@ background-image: url(https://images.pexels.com/photos/1183099/pexels-photo-1183
 .hljs {
   display: block;
   overflow-x: auto;
-  background: transparent;
+  background: #141414;
+  background: #00000099;
     color: #fff;
     padding: .5em;
 }
 
 .hljs-keyword, .hljs-selector-tag {
+  color: #00AEEF;
   color: #fff;
 }
 
@@ -198,17 +200,36 @@ background-image: url(https://images.pexels.com/photos/1183099/pexels-photo-1183
 }
 
 .hljs-string {
-    color: #14a76c;
+    color: #FF652F;
+    color: #58C554;
 }
 
+.h1js-bracket{
+  color: rgba(128, 128, 128, 0.5);
+}
 
 .hljs-comment, .hljs-quote {
-    color: #b3d4fc;
-    font-style: italic;
+    color: #0CFFC7;
 }
 
 .hljs-number, .hljs-built_in, .hljs-builtin-name, .hljs-literal, .hljs-type, .hljs-params, .hljs-meta, .hljs-link {
   color: #fff;
+}
+
+
+/* Set colour for function parameters */
+.hljs-fun-param {
+    color: #ff4000;
+}
+
+/* Make the pipe and assign operator bold */
+.hljs-pipe, .hljs-assign {
+    font-weight: bold;
+    color: #FF652F;
+}
+
+.h1js-zg-paren {
+  color: pink !important;
 }
 
 input, select, textarea {
@@ -405,6 +426,25 @@ a {
 #code-folding-buttons .dropdown-menu li {
     padding: 5px;
 }
+
+
+.skills-logo {
+    margin: 15px;
+    color: #69b3a2;
+    background: #000000;
+    font-size: 45px;
+    /* padding: 30px; */
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 5px;
+    border: solid;
+    height: 125px;
+    width: 125px;
+    line-height: 125px;
+}
+
 /* End code folding */
 
 

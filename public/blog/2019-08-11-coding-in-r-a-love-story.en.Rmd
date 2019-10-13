@@ -17,30 +17,139 @@ linktitle: ''
 type: post
 ---
 
+```{r, include=F}
+knitr::opts_chunk$set(
+  warning = F,
+  message = F,
+  out.width="100%",
+  fig.align='center'
+  
+)
+```
 
 
-placeholder for a post on teaching yourself to code
+as i left the colorado mountains to fly to NYC, it finally hit me. i spent the last three years of my life teaching myself to code, and for the first time, it felt real. like this was what I was meant to do. 
+
+
+
+<h1> this blog post is a work in progress </h1>
+
+my coding journey began with a question. 
+
+<blockquote style="color:#14A76C;">
+hey, Zac. can you analyze our portfolio's cluster risk? 
+</blockquote>
+
+although i was working on quant analytics at the time, i have to say, this one stumped me. <b style ="color:#FF652F;">i had no idea what the hell cluster risk was; </b><b style="color:#14A76C;">but i wanted to find out. </b>
+
+
+
+after a few hours of googling, i came across a few solutions in R, and started. 
+
+
+
+my first line of code was:
 
 ```{r}
-plotly_center <- function(plot){
-
-  shiny::div(plot,align = "center")
-
-}
-
+hist(rnorm(1000))
 ```
 
+a simple but powerful start. 
 
-```{r, warning=FALSE,message=FALSE}
+in one line of code, we created one thousand, random, normally distributed values, and plotted them. i remember thinking, "wow, this is cool". 
+
+
+```{r, include = F}
+# code
 library(tidyverse)
 library(tidyquant)
-library(plotly)
+
+tq_get("AAPL") %>%            
+  ggplot(aes(date,adjusted))+ 
+    geom_line()+              
+    geom_smooth()+
+    theme_tq()
 
 
-tq_get("AAPL") %>% 
-  plot_ly(x = ~date,
-          y = ~adjusted,
-          mode = "lines") %>% 
-  plotly_center()
 
 ```
+
+
+<!-- it felt surreal. how could someone without a formal CS degree be here. without a certain doubt in my mind, i credit all of my work to two things. 1. the open source community & 2. R & Rstudio.  -->
+
+
+<!-- at the time, i was working with asset managers on quant workflows and while hard questions were the norm, this one was unique. . it wasn't an outrageous question to receive, but if im being honest, <b style ="color:#FF652F;">i had no idea what the hell that was</b> -->
+
+<!-- but i loved working with their firm,  -->
+
+<!-- <b style ="color:#FF652F;">to tell you the truth, I had no idea what the hell that was.</b> -->
+
+
+<!-- <b style ="color:#FF652F;">i had to teach myself to code.</b> -->
+
+<!-- let me tell you, those first few weeks can be brutal (if you don't know where to look. and sometimes you get the feeling that your looking at hyroglyphics. slowly but surely though, your code starts to look more like art. -->
+
+<!-- let me show you where I started.  -->
+
+
+<!-- at first, -->
+
+<!-- <div> -->
+<!-- <div style="width:50%;margin:auto 0;color:orange;"> -->
+
+<!-- - load packages -->
+<!-- - get apples stock price -->
+<!-- - create a plot: x=date ; y=adjusted price  -->
+<!-- - plot a line -->
+<!-- - smooth trend -->
+<!-- - give it a theme -->
+
+
+<!-- </div> -->
+
+<!-- </div> -->
+
+<!-- now don't get me wrong. it takes a lot of work. it was my 6pm-12pm grind. code, enter, error, fix.  -->
+
+<!-- but i found what I had longed for. the ability to create; without limitations. if you could imagine it, you could develop it.  -->
+
+<!-- so i did something crazy. on my 25th birthday, i left san francisco to code full time.  -->
+
+<!-- looking back on it, it was a pretty aggressive play. -->
+
+<!-- im sure my company was rather confused because seemingly, I was right where I wanted to be.  a week into the job, they asked where do you see yourself in two years? i responded, i want to join the quant team in australia. one year later, they were preparing to apply for a visa. -->
+
+<!-- but for some reason, my heart said, "na, i'm good."  -->
+
+<!-- it wasn't the company, it wasn't my colleauges, it wasn't the opportunity. -->
+<!-- genuinely, i loved the culture. i loved the travel. i loved the opportunity.  -->
+
+<!-- but my heart was calling me somewhere else. so i left.  -->
+
+<!-- without the slightest idea of what i was going to do, i moved home to Denver.  -->
+
+<!-- heres a quick summary of what happened.  -->
+
+<!-- i went to bachelors party in grand lake. on sunday morning, at 5am, i woke up, grabbed a coffee, and decided i was going to move there a week later.  -->
+
+
+<!-- moving from san francisco to a mountain town of 500 people was quite the adventure.  -->
+
+<!-- after a few weeks of exploring every inch of the forest, i decided to sit down and get back to coding.  -->
+
+<!-- at first, i have to say, i was coding blind. but i had a general idea for what i wanted to build.  -->
+
+<!-- i wanted to build an open-source equity research terminal. something that would allow the average person to manage their investment workflow, while also being accessible to developers who wanted to continue to develop it on their own.  -->
+
+<!-- i choose to code in R. and i swear by it. after 3 years, i can genuinely say there isn't a single problem that i haven't been able to solve with it. in fact, i even built this website using it.  -->
+
+<!-- as i started to get farther along in the process, i started to realize that i would either need to find a way to monetize it, or to get a J.O.B. -->
+
+<!-- the latter sounded less appealing than doing my own thing, but i started to reach out to investors and get some ideas on what my options were.  -->
+
+
+
+
+
+
+

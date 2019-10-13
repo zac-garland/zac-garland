@@ -27,7 +27,7 @@ disableLanguages        = [""]
   # Sets options for highlight.js
   highlightjs           = true
   highlightjsTheme      = "an-old-hope"
-  highlightjsLang       = ["html", "css", "js", "toml"]
+  highlightjsLang       = ["html", "css", "js", "toml","r"]
   # Sets where "View More Posts" links to
   viewMorePostsLink     = "/blog/"
   # Activate Estimated Reading Times, which appear in the post headers
@@ -72,6 +72,7 @@ disableLanguages        = [""]
     # A width of less than 100px is recommended from a design perspective.
     [params.intro.pic]
       src                 = "/img/main/my_face.png"
+      mtn_src             = "/img/main/mtn_man.jpg"
       # Masks image in a certain shape. Supported are circle, triangle, diamond, and hexagon.
       shape               = "circle"
       width               = "200px"

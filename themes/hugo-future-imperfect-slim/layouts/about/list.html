@@ -37,8 +37,8 @@
 </div>
 </div>
 
-
-        <article class="post about-me">
+{{ partial "skills" . }}
+<!--        <article class="post about-me">
           <header>
             <div class="title">
               {{ if $.Scratch.Get "h1" }}
@@ -53,7 +53,7 @@
           <div id="content">
             {{ .Content }}
           </div>
-        </article>
+        </article> -->
       </main>
       {{ partial "scripts" . }}
     </div>

@@ -255,6 +255,42 @@ input, select, textarea {
     color: black;
 }
 
+.cool-icons  ul{
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0
+  
+}
+
+
+
+.cool-icons .socnet-icons li{
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: #212529;
+    text-align: center;
+    
+    
+}
+
+.cool-icons .socnet-icons li a{
+  border-bottom: none;
+}
+
 
 .post {
     background: #000000CC;

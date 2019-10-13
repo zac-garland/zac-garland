@@ -98,10 +98,18 @@ you can learn more about my coding journey <a href="/blog/coding-in-r-a-love-sto
 feel free to <a href="/contact">contact me</a> about equity research, data science, or future opportunities. 
 </p>
 <hr>
+</div>
+<div style="width:50%;margin:auto;">
+<div class="cool-icons">
+<ul class="socnet-icons">
+  {{ if .Site.Params.intro.rssIntro }}{{ partial "rss-icon" . }}{{ end }}
+  {{ if .Site.Params.intro.socialIntro }}{{ partial "socnet-icon" . }}{{ end }}
+<li><a href="/contact" class="fas fa-envelope"></a></li>
+</ul>
+</div>  
+
 <br><br>
 </div>
-
-
 <!-- end -->
 </div>
 

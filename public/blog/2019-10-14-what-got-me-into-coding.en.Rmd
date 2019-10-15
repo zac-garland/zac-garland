@@ -1,0 +1,124 @@
+---
+title: what got me into coding
+author: Zac Garland
+date: "`r Sys.Date()`"
+slug: what-got-me-into-coding
+categories:
+  - R
+  - tidyverse
+  - tidyquant
+tags:
+  - R
+  - Rstudio
+  - Tidyverse
+  - tidyquant
+description: "cluster risk, tidyverse, and tidyquant"
+featured: code_2.jpg
+featuredalt: ''
+featuredpath: post
+linktitle: ''
+type: post
+exclude_jquery: true
+---
+
+```{r, include=F}
+knitr::opts_chunk$set(
+  warning = F,
+  message = F,
+  out.width="100%",
+  fig.align='center'
+  
+)
+```
+
+
+<style>
+<!-- table>thead { -->
+<!--     background-color: #000; -->
+
+<!-- } -->
+
+table{
+color: black;
+}
+
+<!-- table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd { -->
+<!--     background-color: #000000; -->
+<!-- } -->
+
+<!-- table.dataTable tbody tr { -->
+<!--     background-color: #202020; -->
+<!-- } -->
+</style>
+
+
+
+# R packages
+
+```{r}
+library(knitr)
+library(DT)
+library(plotly)
+library(widgetframe)
+library(tidyverse)
+library(tidyquant)
+
+```
+
+# Fetch Stock Index
+
+```{r}
+
+stock_index <- tq_index("DOW")
+
+stock_index %>% 
+  select(symbol,sector,company,weight) %>% 
+  mutate(weight = round(weight*100,2)) %>% 
+  datatable(options = list(dom = 'tp'),rownames=F)
+
+
+```
+
+# calculate top 5 returns
+
+```{r}
+top_five <- stock_index %>% 
+  slice(1:5)
+
+
+top_five_prices <- top_five %>% 
+  pull(symbol) %>% 
+  tq_get()
+
+
+top_five <- top_five_prices %>% 
+  select(symbol,date,volume,adjusted) %>% 
+  group_by(symbol) %>% 
+  mutate(ret = adjusted/lag(adjusted)-1) %>% 
+  filter(!is.na(ret)) %>% 
+  mutate(cumulative_ret = with_order(date,cumprod,1+ret)-1) %>% 
+  ungroup() 
+
+top_five %>% 
+  slice(1:100) %>% 
+  mutate_at(vars(adjusted:cumulative_ret),funs(round(.,2))) %>% 
+  datatable(options = list(dom = 't',scrollY = '400px',paging=F),
+            rownames=F)
+
+```
+
+# plot
+
+```{r}
+top_five %>% 
+  plot_ly(x = ~date,
+          y = ~cumulative_ret,
+          color = ~symbol,
+          mode = "lines") %>% 
+  layout(plot_bgcolor = "#000000",
+         paper_bgcolor = "#000000",
+         font = list(color="#ffffff")) %>% 
+  config(displayModeBar = F)
+
+```
+

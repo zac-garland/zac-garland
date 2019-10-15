@@ -6,20 +6,18 @@
     <description>Recent content in R on Zac Garland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>teach yourself to code</title>
-      <link>/blog/coding-in-r-a-love-story/</link>
-      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      <title>what got me into coding</title>
+      <link>/blog/what-got-me-into-coding/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/coding-in-r-a-love-story/</guid>
-      <description>as i left the colorado mountains to fly to NYC, it finally hit me. i spent the last three years of my life teaching myself to code, and for the first time, it felt real. like this was what I was meant to do.
-this blog post is a work in progressmy coding journey began with a question.
-hey, Zac. can you analyze our portfolio’s cluster risk?</description>
+      <guid>/blog/what-got-me-into-coding/</guid>
+      <description>thead { --table{color: black;}R packageslibrary(knitr)library(DT)library(plotly)library(widgetframe)library(tidyverse)library(tidyquant)Fetch Stock Indexstock_index &amp;lt;- tq_index(&amp;quot;DOW&amp;quot;)stock_index %&amp;gt;% select(symbol,sector,company,weight) %&amp;gt;% mutate(weight = round(weight*100,2)) %&amp;gt;% datatable(options = list(dom = &amp;#39;tp&amp;#39;),rownames=F){&#34;x&#34;:{&#34;filter&#34;:&#34;none&#34;,&#34;data&#34;:[[&#34;BA&#34;,&#34;AAPL&#34;,&#34;HD&#34;,&#34;UNH&#34;,&#34;MCD&#34;,&#34;GS&#34;,&#34;V&#34;,&#34;MMM&#34;,&#34;IBM&#34;,&#34;TRV&#34;,&#34;MSFT&#34;,&#34;UTX&#34;,&#34;JNJ&#34;,&#34;DIS&#34;,&#34;CAT&#34;,&#34;PG&#34;,&#34;WMT&#34;,&#34;AXP&#34;,&#34;CVX&#34;,&#34;JPM&#34;,&#34;NKE&#34;,&#34;MRK&#34;,&#34;XOM&#34;,&#34;VZ&#34;,&#34;WBA&#34;,&#34;KO&#34;,&#34;INTC&#34;,&#34;DOW&#34;,&#34;CSCO&#34;,&#34;PFE&#34;],[&#34;Industrials&#34;,&#34;Information Technology&#34;,&#34;Consumer Discretionary&#34;,&#34;Health Care&#34;,&#34;Consumer Discretionary&#34;,&#34;Financials&#34;,&#34;Information Technology&#34;,&#34;Industrials&#34;,&#34;Information Technology&#34;,&#34;Financials&#34;,&#34;Information Technology&#34;,&#34;Industrials&#34;,&#34;Health Care&#34;,&#34;Communication Services&#34;,&#34;Industrials&#34;,&#34;Consumer Staples&#34;,&#34;Consumer Staples&#34;,&#34;Financials&#34;,&#34;Energy&#34;,&#34;Financials&#34;,&#34;Consumer Discretionary&#34;,&#34;Health Care&#34;,&#34;Energy&#34;,&#34;Communication Services&#34;,&#34;Consumer Staples&#34;,&#34;Consumer Staples&#34;,&#34;Information Technology&#34;,&#34;Materials&#34;,&#34;Information Technology&#34;,&#34;Health Care&#34;],[&#34;Boeing Company&#34;,&#34;Apple Inc.&#34;,&#34;Home Depot Inc.</description>
     </item>
     
     <item>

@@ -3,11 +3,13 @@
   {{ range .Site.Params.highlightjsLang }}<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/{{ . }}.min.js"></script>{{ end }}
   <script>hljs.initHighlightingOnLoad();</script>
 {{ end }}
-{{ range .Site.Params.jsFiles }}
-  {{ if eq . "default" }}
+{{ if not .Params.exclude_jquery}}
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+{{ end }}
+{{ range .Site.Params.jsFiles }}
+  {{ if eq . "default" }}
   <script src={{ "js/util.js" | relURL }}></script>
   <script src={{ "js/main.js" | relURL }}></script>
   <script src={{ "js/add-on.js" | relURL }}></script>

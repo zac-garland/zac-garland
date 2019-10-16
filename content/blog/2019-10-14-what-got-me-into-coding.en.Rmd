@@ -79,25 +79,30 @@ stock_index %>%
 
 ```
 
-# calculate top 5 returns
+# calculate returns
 
 ```{r}
-top_five <- stock_index %>% 
-  slice(1:5)
 
-
-top_five_prices <- top_five %>% 
+stock_p <- stock_index %>% 
   pull(symbol) %>% 
-  tq_get()
+  tq_get(from = as_date("2000-01-01"))
 
-
-top_five <- top_five_prices %>% 
+stock_p <- stock_p %>% 
   select(symbol,date,volume,adjusted) %>% 
   group_by(symbol) %>% 
   mutate(ret = adjusted/lag(adjusted)-1) %>% 
   filter(!is.na(ret)) %>% 
   mutate(cumulative_ret = with_order(date,cumprod,1+ret)-1) %>% 
   ungroup() 
+
+
+top_five <- stock_index %>% 
+  slice(1:5) %>% 
+  left_join(stock_p) %>% 
+  select(symbol,date,volume,adjusted,ret,cumulative_ret)
+
+
+
 
 top_five %>% 
   slice(1:100) %>% 
@@ -118,6 +123,48 @@ top_five %>%
   layout(plot_bgcolor = "#000000",
          paper_bgcolor = "#000000",
          font = list(color="#ffffff")) %>% 
+  config(displayModeBar = F)
+
+```
+
+
+
+```{r}
+
+p_dat <- stock_p %>% 
+  left_join(stock_index) %>% 
+  select(symbol,company,sector,date,weight,adjusted,ret,cumulative_ret) %>% 
+  mutate(year = year(date)) %>% 
+  group_by(symbol,sector,year) %>% 
+  mutate(cumulative_ret = with_order(date,cumprod,1+ret)-1, 
+         avg_sd = sd(ret,na.rm=T)*sqrt(252)) %>% 
+  filter(date == max(date,na.rm=T)) %>% 
+  ungroup()
+
+colors <- c('#4AC6B7', '#1972A4', '#965F8A', '#FF7070', '#C61951')
+
+ax <- list(
+  title = "",
+  zeroline = FALSE,
+  showline = FALSE,
+  showticklabels = FALSE,
+  showgrid = FALSE
+)
+
+
+p_dat %>% 
+  plot_ly(x = ~sector, y = ~cumulative_ret, color = ~sector, size = ~avg_sd, colors = colors, frame = ~year,
+        type = 'scatter', mode = 'markers', sizes = c(5,50),
+        marker = list(symbol = 'circle', sizemode = 'diameter',
+                      line = list(width = 2, color = '#FFFFFF')),
+        text = ~paste('ticker:', symbol, '<br>sector:', sector, '<br>return:', scales::percent(cumulative_ret),
+                      '<br>annualized sd:', scales::percent(avg_sd))) %>% 
+    layout(xaxis = ax,
+           yaxis = list(tickformat = "%", title = ""),
+           plot_bgcolor = "#000000",
+         paper_bgcolor = "#000000",
+         font = list(color="#ffffff")) %>% 
+  animation_opts(2000) %>% 
   config(displayModeBar = F)
 
 ```

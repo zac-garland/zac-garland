@@ -3,18 +3,64 @@
   {{ partial "head" . }}
   <body>
     {{ partial "site-header" . }}
-    <div id="wrapper">
-      {{ partial "site-intro" . }}
+<div id="particles-js"></div>
+    <div>
       <main id="site-main">
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-        {{ range $paginator.Pages }}
-          {{ .Render "content-list" }}
-        {{ end }}
-        {{ partial "pagination" . }}
+<div style="background:#000000;color:white!important;height:1000px;">      
+        <br>
+        <div style="height:500px;">
+        {{ partial "site-intro-about" . }}</div>
+<div class="hide-if-small-screen" style="padding-top: 5%">
+<div align="center">        
+<svg width="1000" height="100">
+<line x1="0" y1="50" x2="1000" y2="50" style="stroke:#ffffff; stroke-width:1.5" />
+<circle cx="200" cy="50" r="10" stroke="#14a76c" stroke-width="6" fill="#ffffff" />
+<text text-anchor="middle" x="200" y="80" fill="white">2015</text>
+<text font-size="13" text-anchor="middle" x="100" y="30" fill="white">Founder</text>
+<text style="font-style: italic" font-size="13" text-anchor="middle" x="100" y="80" fill="#FF652F">Bears Go Bald</text>
+<circle cx="400" cy="50" r="10" stroke="#14a76c" stroke-width="6" fill="#ffffff" />
+<text text-anchor="middle" x="400" y="80" fill="white">2016</text>
+<text font-size="13" text-anchor="middle" x="300" y="30" fill="white">B.S. Finance, Management </text>
+<text style="font-style: italic" font-size="13" text-anchor="middle" x="300" y="80" fill="#FF652F">Northern Colorado</text>
+<circle cx="600" cy="50" r="10" stroke="#14a76c" stroke-width="6" fill="#ffffff" />
+<text text-anchor="middle" x="600" y="80" fill="white">2018</text>
+<text font-size="13" text-anchor="middle" x="500" y="30" fill="white">Consultant, Quant</text>
+<text style="font-style: italic" font-size="13" text-anchor="middle" x="500" y="80" fill="#FF652F">FactSet</text>
+<circle cx="800" cy="50" r="10" stroke="#14a76c" stroke-width="6" fill="#ffffff" />
+<text text-anchor="middle" x="800" y="80" fill="white">2019</text>
+<text font-size="13" text-anchor="middle" x="700" y="30" fill="white">Developer, Analyst</text>
+<text style="font-style: italic" font-size="13" text-anchor="middle" x="700" y="80" fill="#FF652F">R Equity Research</text>
+<text font-size="13" text-anchor="middle" x="900" y="30" fill="white">Engineer, Data Science</text>
+<text style="font-style: italic" font-size="13" text-anchor="middle" x="900" y="80" fill="#FF652F">Mastercard - Economics</text>
+</svg>
+</div>
+</div>
+</div>
+
+{{ partial "skills" . }}
+<!--        <article class="post about-me">
+          <header>
+            <div class="title">
+              {{ if $.Scratch.Get "h1" }}
+                <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+                {{ $.Scratch.Set "h1" false }}
+              {{ else }}
+                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+              {{ end }}
+              {{ with .Description }}<p>{{ . }}</p>{{ end }}
+            </div>
+          </header>
+          <div id="content">
+            {{ .Content }}
+          </div>
+        </article> -->
+
+    
       </main>
-      {{ partial "site-sidebar" . }}
-      {{ partial "site-footer" . }}
       {{ partial "scripts" . }}
     </div>
+    
+    
+    
   </body>
 </html>

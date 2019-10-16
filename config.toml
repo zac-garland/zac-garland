@@ -125,35 +125,24 @@ disableLanguages        = [""]
     weight            = 1
 
   [[menu.main]]
-    name              = "About"
-    url               = "/about/"
-    identifier        = "far fa-id-card"
-    weight            = 2
-
-  [[menu.main]]
     name              = "Data Science"
     url               = "/blog/"
     identifier        = "fas fa-code-branch"
-    weight            = 3
+    weight            = 2
     
 
   [[menu.main]]
     name              = "Equity Research"
     url               = "/equity-research/"
     identifier        = "fas fa-chart-line"
-    weight            = 4
+    weight            = 3
 
-  [[menu.main]]
-    name              = "Categories"
-    url               = "/categories/"
-    identifier        = "fas fa-sitemap"
-    weight            = 5
 
   [[menu.main]]
     name              = "Contact"
     url               = "/contact/"
     identifier        = "far fa-envelope"
-    weight            = 6
+    weight            = 4
 
 [Languages]
   # Each language has its own menu.

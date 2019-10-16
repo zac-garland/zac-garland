@@ -348,6 +348,21 @@ input, select, textarea {
   
 }
 
+.mini-post-min {
+    background: #181818 !important;
+    color: #fff !important;
+    margin: auto;
+    width: 35% !important;
+    font-size: .7em;
+}
+
+.about-recent {
+    width: 90%;
+    margin: auto;
+}
+
+
+
 
 h1, h2, h3, h4, h5, h6 {
   

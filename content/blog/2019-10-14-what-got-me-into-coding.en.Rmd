@@ -153,19 +153,22 @@ ax <- list(
 
 
 p_dat %>% 
-  plot_ly(x = ~sector, y = ~cumulative_ret, color = ~sector, size = ~avg_sd, colors = colors, frame = ~year,
+  plot_ly(x = ~avg_sd, y = ~cumulative_ret, color = ~sector, size = ~cumulative_ret/avg_sd, colors = colors, frame = ~year,
         type = 'scatter', mode = 'markers', sizes = c(5,50),
         marker = list(symbol = 'circle', sizemode = 'diameter',
                       line = list(width = 2, color = '#FFFFFF')),
         text = ~paste('ticker:', symbol, '<br>sector:', sector, '<br>return:', scales::percent(cumulative_ret),
                       '<br>annualized sd:', scales::percent(avg_sd))) %>% 
-    layout(xaxis = ax,
-           yaxis = list(tickformat = "%", title = ""),
+    layout(xaxis = list(tickformat = "%", title = "annualized sd"),
+           yaxis = list(tickformat = "%", title = "cumulative return"),
            plot_bgcolor = "#000000",
          paper_bgcolor = "#000000",
-         font = list(color="#ffffff")) %>% 
-  animation_opts(2000) %>% 
+         font = list(color="#ffffff"),
+      showlegend = F) %>% 
+  animation_opts(1000) %>% 
+  animation_button(visible = F) %>% 
   config(displayModeBar = F)
+
 
 ```
 

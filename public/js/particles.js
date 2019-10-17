@@ -754,7 +754,7 @@ pJS.fn.modes.pushParticles = function(nb, pos){
 
     pJS.tmp.pushing = true;
 
-    if(pJS.particles.array.length<140){
+    if(pJS.particles.array.length<25){
         for(var i = 0; i < nb; i++){
           pJS.particles.array.push(
             new pJS.fn.particle(

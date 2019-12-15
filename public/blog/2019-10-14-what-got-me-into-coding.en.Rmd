@@ -51,10 +51,6 @@ color: black;
 <!-- } -->
 </style>
 
-```{r,echo = F}
-shiny::h1("this post is in progress",style = "color:#69b3a2")
-```
-
 
 # R packages
 
@@ -65,8 +61,54 @@ library(plotly)
 library(widgetframe)
 library(tidyverse)
 library(tidyquant)
+library(leaflet)
+library(geosphere)
 
 ```
+
+
+
+```{r,echo = F}
+shiny::h1("this post is in progress",style = "color:#69b3a2")
+```
+
+
+<!-- As I look back on my journey to coding, I can't help but laugh.  -->
+
+<!-- It's amazing how a daisy chain of event's can seemingly all pile up to lead you to where you are today.  -->
+
+<!-- Which for me, is Breckenridge, CO.  -->
+
+
+```{r,eval=FALSE,include=FALSE}
+
+loc_df <- c('37.7749 -122.4194',
+'40.2522 -105.8231',
+'39.4817 106.0384') %>% 
+  tibble(long_lat = .) %>% 
+  separate(long_lat,c("lat","long"),sep=" ") %>% 
+  mutate_all(as.double)
+
+
+
+
+
+gcIntermediate(c(loc_df$long[1],loc_df$lat[1]), c(loc_df$long[2],loc_df$lat[2]),
+               n=100, 
+               addStartEnd=TRUE,
+               sp=TRUE) %>% 
+leaflet() %>% 
+addTiles() %>% 
+addPolylines() %>% 
+setView(lng = -113, lat = 38,zoom=5)
+
+
+
+
+```
+
+
+
 
 # Fetch Stock Index
 

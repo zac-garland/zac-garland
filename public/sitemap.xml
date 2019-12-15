@@ -15,13 +15,18 @@
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>/equity-research/</loc>
+    <lastmod>2019-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
     <lastmod>2019-12-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>/categories/r/</loc>
     <lastmod>2019-12-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -51,13 +56,25 @@
   </url>
   
   <url>
-    <loc>/categories/tidyquant/</loc>
+    <loc>/categories/equity-research/</loc>
+    <lastmod>2019-12-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/equityresearchr/</loc>
     <lastmod>2019-12-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/tidyquant/</loc>
+    <lastmod>2019-12-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/tidyquant/</loc>
     <lastmod>2019-12-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -85,13 +102,13 @@
   </url>
   
   <url>
-    <loc>/categories/philanthropy/</loc>
+    <loc>/tags/philanthropy/</loc>
     <lastmod>2019-12-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/philanthropy/</loc>
+    <loc>/categories/philanthropy/</loc>
     <lastmod>2019-12-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -105,23 +122,6 @@
   <url>
     <loc>/tags/unco/</loc>
     <lastmod>2019-12-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/equity-research/</loc>
-    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/equity-research/</loc>
-    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/equityresearchr/</loc>
-    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

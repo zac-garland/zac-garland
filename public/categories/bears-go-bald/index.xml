@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bears-go-bald on Zac Garland</title>
+    <link>/categories/bears-go-bald/</link>
+    <description>Recent content in bears-go-bald on Zac Garland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/bears-go-bald/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bears Go Bald</title>
+      <link>/philanthropy/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/philanthropy/</guid>
+      <description>Bears Go Bald by Zac Garland</description>
+    </item>
+    
+  </channel>
+</rss>

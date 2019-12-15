@@ -3,13 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/philanthropy/</loc>
+    <lastmod>2019-12-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
+    <lastmod>2019-12-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-12-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/bears-go-bald/</loc>
+    <lastmod>2019-12-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/philanthropy/</loc>
+    <lastmod>2019-12-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/philanthropy/</loc>
+    <lastmod>2019-12-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/st-baldricks/</loc>
+    <lastmod>2019-12-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/unco/</loc>
+    <lastmod>2019-12-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
     <lastmod>2019-10-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -28,12 +69,6 @@
   
   <url>
     <loc>/tags/rstudio/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2019-10-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

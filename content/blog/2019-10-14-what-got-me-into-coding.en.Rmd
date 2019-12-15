@@ -1,5 +1,5 @@
 ---
-title: what got me into coding
+title: what got me into coding (in progress)
 author: Zac Garland
 date: "`r Sys.Date()`"
 slug: what-got-me-into-coding
@@ -51,6 +51,9 @@ color: black;
 <!-- } -->
 </style>
 
+```{r,echo = F}
+shiny::h1("this post is in progress",style = "color:#69b3a2")
+```
 
 
 # R packages

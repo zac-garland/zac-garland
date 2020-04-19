@@ -6,10 +6,19 @@
     <description>Recent content in tidyverse on Zac Garland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/tidyverse/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>one hundred tips &amp; tricks in R</title>
+      <link>/blog/r-tips/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/r-tips/</guid>
+      <description>table{color: black;}</description>
+    </item>
     
     <item>
       <title>what got me into coding (in progress)</title>
